@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="firstdiv" class="color">
+    <p>This is my First Paragraph</p>
+</div>
+          <br>
+<div id="secondiv" class="color">
+  <p>thisis my Second Paragraph</p>
+</div>
+            <br>
+<div id="thirddiv" class="color">
+  <p> This is my Third Paragraoh</p>
+</div>
+
+    <br>
+
+<button type="button" id="btn1" name="button">fadeOut</button>
+<button type="button" id="btn2" name="button">fadeIn</button>
+<button type="button" id="btn3" name="button">fadeToggle</button>
+<button type="button" id="btn4" name="button">slideUp</button>
+<button type="button" id="btn5" name="button">slideDown</button>
+<button type="button" id="btn6" name="button">slideToggle</button>
+<button type="button" id="btn7" name="button">hide</button>
+<button type="button" id="btn8" name="button">show</button>
+<button type="button" id="btn9" name="button">Toggle</button>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script>
+
+$(document).ready(function()
+{
+    $('#btn1').click(function()
+  {
+      $("#firstdiv").fadeOut(2000);
+  })
+
+    $("#btn2").click(function()
+  {
+    $("#firstdiv").fadeIn(2000);
+  })
+
+  $("#btn3").click(function()
+{
+  $("#firstdiv").fadeToggle(3000);
+})
+
+  $("#btn4").click(function()
+{
+  $("#secondiv").slideUp(3000);
+})
+
+  $("#btn5").click(function()
+{
+  $("#secondiv").slideDown(3000);
+})
+
+  $("#btn6").click(function()
+{
+  $("#secondiv").slideToggle(4000);
+})
+
+$("#btn7").click(function()
+{
+  $("#thirddiv").hide();
+})
+$("#btn8").click(function()
+{
+  $("#thirddiv").show();
+})
+$("#btn9").click(function()
+{
+  $("#thirddiv").toggle();
+})
+
+
+
+
+
+})
+
+</script>
+
+
+
+</html>
